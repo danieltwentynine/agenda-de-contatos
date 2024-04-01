@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet">
+    <link rel="icon" href="./images/contact.png">
+</head>
+<body>
+    <header>
+            <h1>Agenda de Contatos <button id="darkModeToggle">Tema Escuro</button></h1>
+            
+    </header>
+    <main>
+        <div class="container">
+            <section class="inputs">
+                <form id="form">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="Nome" required id="campo-nome"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" placeholder="Telefone" required id="campo-tel"></td>
+                            </tr>
+                            <tr>
+                                <td><button type="submit">Adicionar +</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </section>
+            <section class="outputs">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Contatos: </td>
+                            <td id="totalC">-</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

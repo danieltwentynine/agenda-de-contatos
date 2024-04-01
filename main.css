@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #E9E9E9;
+    color: black;
+}
+
+.dark-mode {
+    background-color: rgb(28, 28, 28);
+    color: #E9E9E9;
+}
+
+header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    margin-top: 20px; 
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 button {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+header h1 button{
+    text-shadow: (1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+
+header h1 button:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+    gap: 120px;
+}
+
+.inputs {
+    display: flex;
+}
+
+form td input {
+    border-radius: 9px;
+    background-color: #D9D9D9;
+    border-style: none;
+    padding: 6px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form td button {
+    border-radius: 9px;
+    background-color: #81E678;
+    border-style: none;
+    padding: 6px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+form td button:hover {
+    background-color: #6fca67;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.outputs {
+    display: inline-block;
+    width: 100%;
+    margin-right: 50px;
+    border-radius: 9px;
+}
+
+.outputs table{
+    width: 100%;
+}
+
+.outputs thead th{
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+    border-bottom: 2px solid rgba(0, 0, 0, 0.232);
+    font-weight: normal;
+}
+
+.outputs tbody td {
+    font-weight: normal;
+    padding: 16px;
+}
+
+.outputs tfoot td{
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
